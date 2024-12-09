@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HUD de ESX</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+    <!-- Contenedor principal -->
+    <div id="hud">
+        <!-- Contenedor para las barras de Salud, Hambre y Sed -->
+        <div class="stat-container">
+            <div class="stat" id="health">
+                <strong>Salud</strong>
+                <div class="progress-bar" id="health-bar"></div>
+            </div>
+            <div class="stat" id="hunger">
+                <strong>Hambre</strong>
+                <div class="progress-bar" id="hunger-bar"></div>
+            </div>
+            <div class="stat" id="thirst">
+                <strong>Sed</strong>
+                <div class="progress-bar" id="thirst-bar"></div>
+            </div>
+
+            <div class="stat" id="fuel">
+                <strong>Combustible</strong>
+                <div class="progress-bar" id="fuel-bar"></div>
+            </div>
+
+            <div class="stat" id="speed">
+                <div></div>
+                <div>0 km/h</div> <!-- Aquí se actualizará la velocidad -->
+                <div class="progress-bar" id="speed-bar">
+                    <span></span>
+                </div>
+            </div>
+            
+
+        </div>
+
+<!-- Contenedor para Dinero y Trabajo (en la parte superior derecha) -->
+<div class="info-container">
+    <div class="stat" id="money">
+        <strong>Efectivo</strong> <span>$0</span>
+    </div>
+    <div class="stat" id="bank">
+        <strong>Banco</strong> <span>$0</span>
+    </div>
+    <div class="stat" id="job">
+        <strong>Trabajo</strong> <span>No asignado</span>
+    </div>
+    <div class="stat" id="rank">
+        <strong>Cargo</strong> <span>No asignado</span> <!-- Nuevo contenedor para el grado -->
+    </div>
+</div>
+ <!-- Marca de agua -->
+ <div id="watermark">
+    <i class="fa fa-globe"></i> discord.gg/antares
+</div>
+</div>
+
+    <script src="hud.js"></script>
+</body>
+</html>
